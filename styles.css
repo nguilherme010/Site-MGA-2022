@@ -5,8 +5,9 @@
   }
 
 .HomeDiv {
-    height: 95vh;
-    width: 98.72vw;
+    height: fit-content;
+    padding: 0px 0px 20px 0px;
+    width: 100vw;
     background: url(img/Home/shutterstock_1124727410.jpg);
     background-size: cover;
     background-position: 100%;
@@ -15,13 +16,14 @@
 
 .bodyHome{
     flex-direction: column;
+    height: fit-content;
     }
 
 .home-textDiv1{
     display: flex;
     flex-wrap: wrap;
     width: 20%;
-    padding: 8vh 0 0 4vw;
+    padding: 4vw 0 4vw 4vw;
 }
 
 .midSection {
@@ -112,6 +114,7 @@
     .RightHeader{
         display: none;
     }
+
 }
 
 .HomeLogo {
@@ -193,31 +196,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 96px 22px;
+    padding: 7.028vw 2vw;
     gap: 18px;
-
-    width: 98.72vw;
-    height: 40vh;
-
+    width: 100vw;
+    height: auto;
     background: radial-gradient(80.28% 132.75% at 0% 0%, #435578 0%, #1C2436 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: inset 0px 7px 24px rgba(0, 0, 0, 0.38);
-
     flex: none;
     order: 1;
     flex-grow: 0;
 }
+
+
 
 .CirclesDiv-MissãoDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 44px 8px;
+    padding: 0px 3vw 8px;
     gap: 16px;
-
-    width: 96px;
+    width: 7.028vw;
     height: 60px;
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -266,27 +266,34 @@
     flex-direction: row;
     align-items: center;
     padding: 0px 0px 15px;
-    gap: 91px;
+    gap: 5vw;
     order: 1;
     flex-grow: 0;
 }
 
 .Title-MissãoDiv {
 
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 7.028vw;
-    line-height: 0%;
+font-family: 'Source Sans Pro';
 
-    display: flex;
-    align-items: center;
+font-style: normal;
 
-    color: #FFFFFF;
+font-weight: 500;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+font-size: 7.028vw;
+
+line-height: 100%;
+
+display: flex;
+
+align-items: center;
+
+color: #FFFFFF;
+
+flex: none;
+
+order: 0;
+
+flex-grow: 0;
 }
 
 .Texto-MissãoDiv {
@@ -307,4 +314,35 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .MissãoDiv {
+        height: auto;
+    }
+
+    .TextDiv-MissãoDiv {
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .Title-MissãoDiv {
+        font-size: 7.028vw;
+    }
+
+    .Texto-MissãoDiv {
+        font-size: 3.028vw;
+        width: 96%;
+    }
+
+    .TextDiv-MissãoDiv {
+        /*display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 0px 15px;*/
+        gap: 2vw;
+        /*order: 1;
+        flex-grow: 0;*/
+    }
 }
