@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    max-width: 100vw;
   }
 
 .HomeDiv {
-    height: fit-content;
+    height: 95vh;
     padding: 0px 0px 20px 0px;
     width: 100vw;
     background: url(img/Home/shutterstock_1124727410.jpg);
@@ -21,9 +22,11 @@
 
 .home-textDiv1{
     display: flex;
+    width: 1;
     flex-wrap: wrap;
-    width: 20%;
     padding: 4vw 0 4vw 4vw;
+    flex-direction: column;
+    grid-template-columns: auto;
 }
 
 .midSection {
@@ -36,7 +39,7 @@
     align-items: center;
     padding: 0px 3.5vw 0px 0px;
     justify-content: space-evenly;
-    height: 10.5vh;
+    height: 72px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -45,42 +48,6 @@
     mask: linear-gradient(90deg, transparent, black 60%);
 }
 
-.homeText1 {
-    white-space: nowrap;
-    width: fit-content;
-    font-family: 'Source Sans Pro';
-    /* font-style: normal; */
-    font-weight: 400;
-    font-size: 7.028vw;
-    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.homeText2 {
-    white-space: nowrap;
-    width: fit-content;
-    
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4.686vw;
-    
-    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
 
 .LeftHeader {
     position: relative;
@@ -93,7 +60,8 @@
 
     /* Inside auto layout */
     flex: 1 1;
-    align-self:baseline;
+    align-self:
+    baseline;
     flex-grow: 1;
 }
 
@@ -103,18 +71,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: 500px;
+    min-width: 47vw;
     height: 100%;
-    flex: 0 0;  
+    flex: 0 0;
     align-self: stretch;
-
-}
-
-@media only screen and (max-width: 800px) {
-    .RightHeader{
-        display: none;
-    }
-
 }
 
 .HomeLogo {
@@ -127,24 +87,33 @@
 
 .ItemHeaderAtual {
 
-    width: -moz-fit-content;
-    width: fit-content;
+width: -moz-fit-content;
 
+width: fit-content;
 
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.44605vh;
-    line-height: 21px;
-    letter-spacing: 0.145em;
-    text-decoration: none;
+font-family: 'Source Sans Pro';
 
-    color: #122246;
+font-style: normal;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    }
+font-weight: 400;
+
+font-size: 2.44605vh;
+
+line-height: 21px;
+
+letter-spacing: 0.145em;
+
+text-decoration: none;
+
+color: #122246;
+
+flex: none;
+
+order: 0;
+
+flex-grow: 0;
+
+}
 
 .ItemHeader {
         
@@ -192,6 +161,112 @@
     flex-grow: 0;
 }
 
+.homeText0 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.767vw;
+    line-height: 30px;
+    text-decoration: underline;
+    color:#122246;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homeText1 {
+    white-space: nowrap;
+    width: fit-content;
+    font-family: 'Source Sans Pro';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 7.028vw;
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homeText2 {
+    white-space: nowrap;
+    width: fit-content;
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.686vw;
+    
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homeText3 {
+    white-space: nowrap;
+    width: fit-content;
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.12vw;
+    
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homeText4 {
+    white-space: nowrap;
+    width: fit-content;
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.53vw;
+    
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.homeText5 {
+    white-space: nowrap;
+    width: fit-content;
+    
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.944vw;
+    
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .MissãoDiv {
     display: flex;
     flex-direction: row;
@@ -206,8 +281,6 @@
     order: 1;
     flex-grow: 0;
 }
-
-
 
 .CirclesDiv-MissãoDiv {
     display: flex;
@@ -273,27 +346,17 @@
 
 .Title-MissãoDiv {
 
-font-family: 'Source Sans Pro';
-
-font-style: normal;
-
-font-weight: 500;
-
-font-size: 7.028vw;
-
-line-height: 100%;
-
-display: flex;
-
-align-items: center;
-
-color: #FFFFFF;
-
-flex: none;
-
-order: 0;
-
-flex-grow: 0;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.028vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .Texto-MissãoDiv {
@@ -316,6 +379,96 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
+.FuncDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 56px;
+    gap: 36px;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(100% 100% at 47.29% 0%, #F5F8F9 0%, #CED8DE 100%);
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.TitleSectionFunc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.TabelaFuncDiv {
+
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(
+        350px, /* min value */
+        1fr /* max value */
+      )
+    );
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    flex-grow: 1;
+
+    width: 90vw;
+}
+
+.TabelaFuncItem-Cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.2vw 0px;
+
+    background: radial-gradient(116.55% 182.13% at 28.72% -42.61%, #405172 0%, #1C2436 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 12px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.756954vw;
+    line-height: 30px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.TitleFunc {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.29412vw;
+    line-height: 91px;
+
+    text-align: center;
+
+    background: linear-gradient(221.92deg, #1A3762 28.03%, #0A172B 89.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 @media only screen and (max-width: 800px) {
     
     .MissãoDiv {
@@ -328,7 +481,7 @@ flex-grow: 0;
     }
 
     .Title-MissãoDiv {
-        font-size: 7.028vw;
+        font-size: kvw;
     }
 
     .Texto-MissãoDiv {
@@ -344,5 +497,9 @@ flex-grow: 0;
         gap: 2vw;
         /*order: 1;
         flex-grow: 0;*/
+    }
+
+    a[class*="ItemHeader"] {
+        display: none;
     }
 }
